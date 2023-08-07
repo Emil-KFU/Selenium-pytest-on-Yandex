@@ -9,9 +9,6 @@ def test_yandex_search_field(browser):
     yandex_main_page.go_to_site()
     # Проверяем наличие поля поиска
     yandex_main_page.check_search_field()
-    #yandex_main_page.click_on_the_search_button()
-    #elements = yandex_main_page.check_navigation_bar()
-    #assert "Картинки" and "Видео" in elements
 
 def test_yandex_suggest_table(browser):
     yandex_main_page = SearchHelper(browser)
@@ -31,7 +28,6 @@ def test_yandex_search_results_page(browser):
     yandex_search_results_page.driver.get(yandex_main_page.driver.current_url)
     # Проверяем, что создан список с результатами поиска
     yandex_search_results_page.check_search_results_page()
-    #time.sleep(5)
 
 def test_yandex_search_results_first_link(browser):
     yandex_main_page = SearchHelper(browser)
